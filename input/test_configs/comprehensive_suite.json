@@ -1,0 +1,14 @@
+{
+  "name": "Comprehensive Test Suite",
+  "description": "Runs all test scripts in sequence for a full validation sweep",
+  "settings_override": {
+    "validation_timeout": 5000,
+    "retry_limit": 2,
+    "headless": true
+  },
+  "scripts": [
+    "input/scripts/01_herokuapp_login.json",
+    "input/scripts/03_herokuapp_multi_page.json",
+    "input/scripts/04_herokuapp_mixed_strategies.json"
+  ]
+}

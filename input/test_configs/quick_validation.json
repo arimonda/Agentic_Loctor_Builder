@@ -1,0 +1,12 @@
+{
+  "name": "Quick Validation Config",
+  "description": "Fast validation run with reduced timeouts for quick testing",
+  "settings_override": {
+    "validation_timeout": 3000,
+    "retry_limit": 1,
+    "headless": true
+  },
+  "scripts": [
+    "input/scripts/01_herokuapp_login.json"
+  ]
+}

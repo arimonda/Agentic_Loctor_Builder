@@ -1,0 +1,59 @@
+{
+  "name": "HerokuApp Login Flow",
+  "base_url": "https://the-internet.herokuapp.com",
+  "metadata": {
+    "author": "QA Team",
+    "version": "1.0",
+    "description": "Validates all locators on the Heroku test app login page",
+    "created": "2026-02-16"
+  },
+  "pages": [
+    {
+      "name": "Login Page",
+      "url": "/login",
+      "description": "Authentication page with username/password form",
+      "elements": [
+        {
+          "name": "page_heading",
+          "strategy": "css",
+          "value": "h2",
+          "intent": "Main page heading that displays 'Login Page'",
+          "line_number": 8,
+          "file_path": "input/page_objects/login_page.py"
+        },
+        {
+          "name": "username_input",
+          "strategy": "id",
+          "value": "username",
+          "intent": "Username text input field for entering login credentials",
+          "line_number": 9,
+          "file_path": "input/page_objects/login_page.py"
+        },
+        {
+          "name": "password_input",
+          "strategy": "id",
+          "value": "password",
+          "intent": "Password text input field for entering login credentials",
+          "line_number": 10,
+          "file_path": "input/page_objects/login_page.py"
+        },
+        {
+          "name": "login_button",
+          "strategy": "css",
+          "value": "button.radius",
+          "intent": "Login submit button to authenticate user",
+          "line_number": 11,
+          "file_path": "input/page_objects/login_page.py"
+        },
+        {
+          "name": "subheader_text",
+          "strategy": "css",
+          "value": "h4.subheader",
+          "intent": "Subheader text below the main heading",
+          "line_number": 12,
+          "file_path": "input/page_objects/login_page.py"
+        }
+      ]
+    }
+  ]
+}

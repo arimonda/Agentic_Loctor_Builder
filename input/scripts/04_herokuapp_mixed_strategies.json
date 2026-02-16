@@ -1,0 +1,59 @@
+{
+  "name": "Mixed Locator Strategy Test",
+  "base_url": "https://the-internet.herokuapp.com",
+  "metadata": {
+    "author": "QA Team",
+    "version": "1.0",
+    "description": "Tests various locator strategies (ID, CSS, XPath, Name) on a single page",
+    "created": "2026-02-16"
+  },
+  "pages": [
+    {
+      "name": "Login Page - Mixed Strategies",
+      "url": "/login",
+      "description": "Uses different locator types to find elements on the login page",
+      "elements": [
+        {
+          "name": "username_by_id",
+          "strategy": "id",
+          "value": "username",
+          "intent": "Username input found via ID attribute",
+          "line_number": 8,
+          "file_path": "input/page_objects/mixed_strategies.py"
+        },
+        {
+          "name": "password_by_name",
+          "strategy": "name",
+          "value": "password",
+          "intent": "Password input found via NAME attribute",
+          "line_number": 9,
+          "file_path": "input/page_objects/mixed_strategies.py"
+        },
+        {
+          "name": "button_by_css",
+          "strategy": "css",
+          "value": "button[type='submit']",
+          "intent": "Submit button found via CSS selector",
+          "line_number": 10,
+          "file_path": "input/page_objects/mixed_strategies.py"
+        },
+        {
+          "name": "heading_by_xpath",
+          "strategy": "xpath",
+          "value": "//h2",
+          "intent": "Page heading found via XPath expression",
+          "line_number": 11,
+          "file_path": "input/page_objects/mixed_strategies.py"
+        },
+        {
+          "name": "form_by_id",
+          "strategy": "id",
+          "value": "login",
+          "intent": "Login form container found via ID",
+          "line_number": 12,
+          "file_path": "input/page_objects/mixed_strategies.py"
+        }
+      ]
+    }
+  ]
+}

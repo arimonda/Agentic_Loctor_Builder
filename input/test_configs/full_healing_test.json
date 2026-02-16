@@ -1,0 +1,13 @@
+{
+  "name": "Full Healing Test Config",
+  "description": "Runs the broken locator script to fully test the AI healing pipeline",
+  "settings_override": {
+    "validation_timeout": 5000,
+    "retry_limit": 3,
+    "headless": true,
+    "auto_commit": false
+  },
+  "scripts": [
+    "input/scripts/02_herokuapp_broken_locators.json"
+  ]
+}

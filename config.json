@@ -1,0 +1,31 @@
+{
+  "active_provider": "gemini",
+  "providers": {
+    "gemini": {
+      "model": "gemini-2.5-pro",
+      "api_key": "YOUR_KEY_HERE"
+    },
+    "openai": {
+      "model": "gpt-4o",
+      "api_key": "YOUR_KEY_HERE"
+    },
+    "claude": {
+      "model": "claude-3-5-sonnet-20241022",
+      "api_key": "YOUR_KEY_HERE"
+    }
+  },
+  "settings": {
+    "screenshot_path": "./logs/screenshots",
+    "dom_capture_path": "./logs/dom",
+    "auto_commit": true,
+    "retry_limit": 3,
+    "validation_timeout": 5000,
+    "headless": true,
+    "browser": "chromium",
+    "viewport_width": 1920,
+    "viewport_height": 1080,
+    "known_locators_db": "./data/known_locators.json",
+    "log_level": "INFO",
+    "dashboard_port": 5050
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "HerokuApp Broken Locators (Healing Demo)",
+  "base_url": "https://the-internet.herokuapp.com",
+  "metadata": {
+    "author": "QA Team",
+    "version": "1.0",
+    "description": "Intentionally broken locators to demonstrate AI self-healing",
+    "created": "2026-02-16"
+  },
+  "pages": [
+    {
+      "name": "Login Page",
+      "url": "/login",
+      "description": "Login page with deliberately broken locators mixed with valid ones",
+      "elements": [
+        {
+          "name": "username_input",
+          "strategy": "id",
+          "value": "txt_username_BROKEN",
+          "intent": "Username text input field for entering login credentials",
+          "line_number": 9,
+          "file_path": "input/page_objects/login_page_broken.py"
+        },
+        {
+          "name": "password_input",
+          "strategy": "id",
+          "value": "password",
+          "intent": "Password text input field (this one is correct)",
+          "line_number": 10,
+          "file_path": "input/page_objects/login_page_broken.py"
+        },
+        {
+          "name": "login_button",
+          "strategy": "xpath",
+          "value": "//button[@id='btn-submit-BROKEN']",
+          "intent": "Login submit button to authenticate user",
+          "line_number": 11,
+          "file_path": "input/page_objects/login_page_broken.py"
+        },
+        {
+          "name": "page_heading",
+          "strategy": "css",
+          "value": "h2",
+          "intent": "Main heading text 'Login Page' (this one is correct)",
+          "line_number": 8,
+          "file_path": "input/page_objects/login_page_broken.py"
+        }
+      ]
+    }
+  ]
+}

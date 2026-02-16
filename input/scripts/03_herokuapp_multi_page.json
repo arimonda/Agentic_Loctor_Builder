@@ -1,0 +1,81 @@
+{
+  "name": "HerokuApp Multi-Page Audit",
+  "base_url": "https://the-internet.herokuapp.com",
+  "metadata": {
+    "author": "QA Team",
+    "version": "1.0",
+    "description": "Multi-page test covering checkboxes, dropdown, and form authentication pages",
+    "created": "2026-02-16"
+  },
+  "pages": [
+    {
+      "name": "Checkboxes Page",
+      "url": "/checkboxes",
+      "description": "Page containing two checkboxes for selection testing",
+      "elements": [
+        {
+          "name": "page_heading",
+          "strategy": "css",
+          "value": "h3",
+          "intent": "Page heading displaying 'Checkboxes'",
+          "line_number": 5,
+          "file_path": "input/page_objects/checkboxes_page.py"
+        },
+        {
+          "name": "checkbox_form",
+          "strategy": "id",
+          "value": "checkboxes",
+          "intent": "Container form element holding all checkboxes",
+          "line_number": 6,
+          "file_path": "input/page_objects/checkboxes_page.py"
+        }
+      ]
+    },
+    {
+      "name": "Dropdown Page",
+      "url": "/dropdown",
+      "description": "Page with a dropdown select menu",
+      "elements": [
+        {
+          "name": "page_heading",
+          "strategy": "css",
+          "value": "h3",
+          "intent": "Page heading displaying 'Dropdown List'",
+          "line_number": 5,
+          "file_path": "input/page_objects/dropdown_page.py"
+        },
+        {
+          "name": "dropdown_select",
+          "strategy": "id",
+          "value": "dropdown",
+          "intent": "Dropdown select element with Option 1 and Option 2",
+          "line_number": 6,
+          "file_path": "input/page_objects/dropdown_page.py"
+        }
+      ]
+    },
+    {
+      "name": "Form Authentication Page",
+      "url": "/login",
+      "description": "Login form page",
+      "elements": [
+        {
+          "name": "login_form",
+          "strategy": "id",
+          "value": "login",
+          "intent": "The main login form container",
+          "line_number": 5,
+          "file_path": "input/page_objects/form_auth_page.py"
+        },
+        {
+          "name": "username_label",
+          "strategy": "xpath",
+          "value": "//label[@for='username']",
+          "intent": "Label text for the username field",
+          "line_number": 6,
+          "file_path": "input/page_objects/form_auth_page.py"
+        }
+      ]
+    }
+  ]
+}
