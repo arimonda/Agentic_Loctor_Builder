@@ -1010,7 +1010,7 @@ validate_candidates(candidate_list, page_url)
 │     (.env file loaded via    │
 │      python-dotenv)          │
 │                              │
-│  GEMINI_API_KEY=AIza...      │
+│  GEMINI_API_KEY=your_key...  │
 │  ACTIVE_PROVIDER=gemini      │
 │  HEADLESS=true               │
 ├──────────────────────────────┤
